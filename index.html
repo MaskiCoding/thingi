@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Oriel · Every window, one keystroke away</title>
+  <meta name="description" content="Oriel is a keyboard-driven window switcher for macOS. Hold Option, tap Tab, let go.">
+  <meta name="theme-color" content="#120e0b">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Pixelify+Sans:wght@400;600&family=VT323&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="room" id="room">
+    <div class="rig" id="rig">
+      <div class="monitor">
+        <div class="well">
+          <div class="screen" id="screen">
+            <div class="tube" id="tube">
+              <div class="desktop" id="desktop" role="application" aria-label="A retro desktop running Oriel">
+                <div class="icons" aria-hidden="true">
+                  <span><i class="ico-app"></i>oriel.app</span>
+                  <span><i class="ico-doc"></i>readme</span>
+                  <span><i class="ico-bin"></i>trash</span>
+                </div>
+                <div class="strip" id="strip" role="listbox" aria-label="Open windows" hidden></div>
+                <div class="taskbar">
+                  <button class="start" id="start" type="button"><i></i>oriel <kbd>⌥⇥</kbd></button>
+                  <div class="tasks" id="tasks"></div>
+                  <span class="tray" id="tray"></span>
+                </div>
+              </div>
+            </div>
+            <div class="glass" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div class="chin">
+          <span class="badge">oriel</span>
+          <span class="vents" aria-hidden="true"></span>
+          <span class="led" id="led" aria-hidden="true"></span>
+          <span class="knob" aria-hidden="true"></span>
+          <span class="knob" aria-hidden="true"></span>
+        </div>
+        <p class="note">hold <b>⌥</b><br>tap <b>⇥</b><br>let go</p>
+      </div>
+      <div class="neck" aria-hidden="true"></div>
+      <div class="base" aria-hidden="true"></div>
+    </div>
+    <div class="spill" aria-hidden="true"></div>
+    <p class="caption">oriel · a keyboard window switcher for macOS · free and open source · <a href="https://github.com/MaskiCoding/oriel">github</a></p>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
